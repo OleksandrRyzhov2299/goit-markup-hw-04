@@ -184,7 +184,7 @@ button {
   color: var(--pressed-state);
 } /* #endregion header */ /* #region hero */
 .hero {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */ /* видалено для збігу з макетом */
   max-width: 1440px;
   margin: 0 auto;
   min-height: 600px;
@@ -197,6 +197,7 @@ button {
   background-position: center;
   background-size: cover;
 }
+
 .hero__title {
   max-width: 496px;
   margin: 0 auto;
@@ -259,8 +260,9 @@ button {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-content {
-  padding: 32px 0;
+  padding: 32px 16px; /* вертикальні 32px, горизонтальні 16px */
 }
+
 .team__desc {
   letter-spacing: 0.02em;
 }
@@ -268,13 +270,15 @@ button {
   display: flex;
   gap: 24px;
   justify-content: center;
+  margin-top: 8px; /* додає простір між описом ролі та іконками */
 }
+
 .social-item {
   width: 40px;
   height: 40px;
 }
 .social-link {
-  margin-top: 8px;
+  /* margin-top: 8px; margin-top: 8px; */ /* прибрано */
   display: flex;
   align-items: center;
   justify-content: center;
